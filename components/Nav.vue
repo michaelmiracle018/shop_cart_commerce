@@ -33,6 +33,11 @@
 
 <script>
 export default {
+   computed: { 
+    cartNumber() {
+      return this.$store.state.cart.length
+    }
+  },
    
   methods: {
     // setTheme(theme) {
